@@ -1,0 +1,10 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #f3f6fd;
+}
+
+.active {
+  background-color: red;
+}
