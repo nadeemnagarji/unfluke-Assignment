@@ -39,10 +39,12 @@ const stockMarketIndicators = [
   "Detrended Price Oscillator (DPO)",
   "Gann Indicators",
 ];
-const handleDesign = (e) => {
-  console.log(e.target.classList);
-  e.target.classList.add("bg-[#6351FD]");
-  e.target.classList.add("text-white");
+const handleDesign = (e: React.MouseEvent<HTMLElement>) => {
+  if (e.target instanceof HTMLElement) {
+    console.log(e.target.classList);
+    e.target.classList.add("bg-[#6351FD]");
+    e.target.classList.add("text-white");
+  }
 };
 export default function ScannerPage() {
   const [search, SetSearch] = useState("");
@@ -87,7 +89,7 @@ export default function ScannerPage() {
               {filteredIndicators.map((item) => (
                 <Badge
                   className=" cursor-pointer"
-                  variant="none"
+                  variant="outline"
                   onClick={(e) => handleDesign(e)}
                   key={item}
                 >
@@ -118,7 +120,7 @@ export default function ScannerPage() {
                 <h4 className="text-md self-start font-semibold px-2">
                   Math operations
                 </h4>
-                <div className=" w-full flex px-2 flex gap-4">
+                <div className=" w-full  px-2 flex gap-4">
                   <Button variant="outline" size="sm">
                     <span className=" font-bold text-md">+</span>
                   </Button>
@@ -148,7 +150,7 @@ export default function ScannerPage() {
                 <h4 className="text-md self-start font-semibold px-2">
                   Comparison/Cross
                 </h4>
-                <div className=" w-full flex px-2 flex gap-4">
+                <div className=" w-full  px-2 flex gap-4">
                   <Button variant="outline" size="sm">
                     <span className=" font-bold text-md">&lt;</span>
                   </Button>
