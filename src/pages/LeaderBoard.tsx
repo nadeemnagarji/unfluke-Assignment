@@ -1,7 +1,5 @@
-import Navbar from "../components/Navbar/Navbar";
-import { columns, User } from "../components/columns";
+import { columns } from "../components/columns";
 import { DataTable } from "../components/data-table";
-import Sidebar from "../components/Navbar/Sidebar";
 import SelectForm from "../components/Select-options";
 import { Button } from "../components/ui/button";
 import MainLayout from "./MainLayout";

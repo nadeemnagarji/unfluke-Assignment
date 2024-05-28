@@ -1,4 +1,4 @@
-import { NavLink, useNavigate, useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { cn } from "../../lib/utils";
 import { LucideIcon } from "lucide-react";
 

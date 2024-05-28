@@ -1,7 +1,5 @@
 " use client";
 
-import { Link } from "react-router-dom";
-import { Button } from "../ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Bell, Star } from "lucide-react";
 

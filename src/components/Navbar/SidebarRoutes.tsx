@@ -6,13 +6,11 @@ import {
   DollarSign,
   HandCoins,
   Layout,
-  List,
   ScanSearch,
   SwitchCamera,
   Webhook,
 } from "lucide-react";
 import SidebarItem from "./SidebarItem";
-import { useParams } from "react-router-dom";
 
 const routes = [
   {
